@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Verificador de idade</h1>
+    <main>
+        <p>
+            <label for="anoNas">Ano de Nascimento: </label>
+            <input type="number" name="anoNas" id="anoNas">
+        </p>
+        <p>
+            <label for="sexo">Sexo: </label>
+            <input type="radio" name="sexo" id="masculino"> Masculino
+            <input type="radio" name="sexo" id="feminino"> Feminino
+            <input type="radio" name="sexo" id="indefinido"> Indefinido
+        </p>
+        <button onclick="verificar()">Verificar</button>
+        <p id="res">Preencha as Informações</p>
+        <div id="imgIdade"></div>
+    </main>
+    <footer>
+        <p>&copy; Eduardo Carrascosa</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
